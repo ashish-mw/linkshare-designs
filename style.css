@@ -101,6 +101,44 @@ form > input[type=submit] {
     height: 40px;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 101; /* Sit on top, hiher value than nav */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid grey;
+    max-width: 450px;
+}
+
+.error .modal-content p {
+    color: palevioletred
+}
+
+.success .modal-content p {
+    color: teal
+}
+
+/* dark theme overrides */
 .dark {
     background-color: black;
     color: white;
@@ -114,10 +152,7 @@ form > input[type=submit] {
     color: white;
 }
 
-.d-flex {
-    display: flex;
-}
-
-.justify-space-between {
-    justify-content: space-between;
+.dark .modal-content {
+    background-color: black;
+    color: white;
 }
