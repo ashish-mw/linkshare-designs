@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>My links | linkshare</title>
+</head>
+
+<body class="dark">
+  <nav class="container">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/my-links.html">My links</a>
+      </li>
+      <li>
+        <button class="link">Logout</button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container m-t-20">
+    <h2>Add a new link</h2>
+    <form>
+      <label for="title">Title for your share</label>
+      <input type="text" id="title" placeholder="Linux wiki" />
+
+      <label for="link">Link</label>
+      <input type="text" id="link" placeholder="https://en.wikipedia.org/wiki/Linux" />
+
+      <input type="submit" value="Submit link"/>
+    </form>
+
+    <div class="separator"></div>
+
+    <h2>My links</h2>
+    <div class="card">
+      <h2>
+        <a href="#" target="_blank">The power of foo</a>
+      </h2>
+      <div class="text-right">
+        <span class="small muted">by akts · 21/01/2022 01:34 PM</span>
+      </div>
+
+      <div class="d-flex justify-space-between">
+        <div>
+          <span class="small pointer">🔼 21</span>
+          <span class="small pointer">🔽 3</span>
+        </div>
+
+        <div class="text-right">
+          <span class="small pointer">✏️ Edit</span>
+          <span class="small pointer">⛔️ Delete</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>
+        <a href="#" target="_blank">Hacker news is not that great</a>
+      </h2>
+      <div class="text-right">
+        <span class="small muted">by akts · 20/01/2022 06:34 PM</span>
+      </div>
+
+      <div class="d-flex justify-space-between">
+        <div>
+          <span class="small pointer">🔼 18</span>
+          <span class="small pointer">🔽 45</span>
+        </div>
+
+        <div class="text-right">
+          <span class="small pointer">✏️ Edit</span>
+          <span class="small pointer">⛔️ Delete</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

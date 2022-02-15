@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+form > label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+form > input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+form > input[type=submit] {
+    cursor: pointer;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.small {
+    font-size: 12pt;
+}
+
+.muted {
+    color: grey;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.separator {
+    height: 40px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark a {
+    color: white;
+}
+
+.dark .link {
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
