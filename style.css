@@ -74,6 +74,10 @@ form > input[type="submit"] {
   margin-top: 20px;
 }
 
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
 .link {
   background: none !important;
   border: none;
@@ -108,6 +112,10 @@ form > input[type="submit"] {
 
 .pointer {
   cursor: pointer;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .separator {
