@@ -6,50 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <script src="theme.js"></script>
   <title>Editing Ubuntu | linkshare</title>
 </head>
 
-<body class="dark">
-
-  <nav class="container">
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/my-links.html">@vasou123</a>
-      </li>
-      <li>
-        <a href="/login">Login</a>
-      </li>
-      <li>
-        <button class="link">Logout</button>
-      </li>
-    </ul>
-
-    <div class="text-right m-t-10">
-      <!-- <button class="link">🌚</button> -->
-      <button class="link">☀️</button>
+<body>
+  <div class="header-wrap">
+    <div class="header-top-blk">
+      <div class="header-container">
+        <ul>
+          <li>
+            <a class="logo" href="/">Link Share</a>
+          </li>
+          <li>
+            <a href="/my-links.html">@vasou123</a>
+          </li>
+          <li>
+            <button class="link">Logout</button>
+          </li>
+        </ul>
+        <div class="skin-wrap">
+          Light mode
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          Dark mode
+        </div>
+      </div>
     </div>
-  </nav>
+    <div class="bg-pattern"></div>
+  </div>
+  <div class="bg-curved-radius">
+    <div class="content-container">
+      <div className="m-b-20">
+        <button class="link">
+          Go back
+        </button>
+      </div>
+      <div class="spacer-20"></div>
+      <h2>Editing Ubuntu - linux for everyone</h2>
+        <form class="form-group">
+          <label for="title">Title for your share</label>
+          <input type="text" id="title" placeholder="Linux wiki" value="Ubuntu - linux for everyone"/>
 
-  <div class="container m-t-20">
-    <div className="m-b-20">
-      <button class="link">
-        Go back
-      </button>
+          <label for="link">Link</label>
+          <input type="text" disabled id="link" placeholder="https://en.wikipedia.org/wiki/Linux" />
+
+          <input type="submit" value="Update link"/>
+        </form>
     </div>
+  </div>
+    
 
-    <h2>Editing Ubuntu - linux for everyone</h2>
-    <form>
-      <label for="title">Title for your share</label>
-      <input type="text" id="title" placeholder="Linux wiki" value="Ubuntu - linux for everyone"/>
-
-      <label for="link">Link</label>
-      <input type="text" disabled id="link" placeholder="https://en.wikipedia.org/wiki/Linux" />
-
-      <input type="submit" value="Update link"/>
-    </form>
+    
 
   </div>
 
