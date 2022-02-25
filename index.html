@@ -6,58 +6,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <script src="theme.js"></script>
   <title>Home | linkshare</title>
 </head>
 
 <body class="">
+  <div class="header-wrap">
+    <div class="header-top-blk">
+      <div class="header-container">
+        <ul>
+          <li>
+            <a class="logo" href="/">Link Share</a>
+          </li>
+          <li>
+            <a class="login" href="/login">Login</a>
+          </li>
+        </ul>
+        <div class="skin-wrap">
+          Light mode
+          <label class="switch">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider round"></span>
+          </label>
+          Dark mode
+        </div>
+      </div>
+    </div>
+    <div class="bg-pattern"></div>
+  </div>
+  <div class="bg-curved-radius">
+    <div class="content-container">
+      <div class="card">
+          <h2>
+            <a href="https://openbsd.org" target="_blank" rel="noreferrer">openbsd - the bsd for everyone</a>
+          </h2>
+          <div class="text-right">
+            <span class="small muted">by tak · 2022-02-22 08:39:11</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2>
+            <a href="https://linux.org" target="_blank" rel="noreferrer">Linux</a>
+          </h2>
+          <div class="text-right">
+            <span class="small muted">by vasu · 2022-02-22 08:37:26</span>
+          </div>
+        </div>
+      </div>
+    </div>
   <nav class="container">
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/my-links.html">@vasou123</a>
-      </li>
-      <li>
-        <a href="/login">Login</a>
-      </li>
-      <li>
-        <button class="link">Logout</button>
-      </li>
-    </ul>
     <div class="text-right m-t-10">
       <button class="link">🌚</button>
       <!-- <button class="link">☀️</button> -->
     </div>
   </nav>
   <div class="container m-t-20">
-    <!-- links -->
-    <div class="card">
-      <h2>
-        <a href="#" target="_blank">The power of foo</a>
-      </h2>
-      <div class="text-right">
-        <span class="small muted">by akts · 21/01/2022 01:34 PM</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>
-        <a href="#" target="_blank">Hacker news is not that great</a>
-      </h2>
-      <div class="text-right">
-        <span class="small muted">by deepak · 20/01/2022 06:34 PM</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>
-        <a href="#" target="_blank">Choosing a linux distro</a>
-      </h2>
-      <div class="text-right">
-        <span class="small muted">by vasou · 19/01/2022 05:25 PM</span>
-      </div>
-    </div>
 
     <div class="text-center">
       <button class="small link">Load more</button>

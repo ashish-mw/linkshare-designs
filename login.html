@@ -6,45 +6,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <script src="theme.js"></script>
   <title>Home | linkshare</title>
 </head>
 
-<body class="dark">
-  <nav class="container">
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/my-links.html">@vasou123</a>
-      </li>
-      <li>
-        <a href="/login">Login</a>
-      </li>
-      <li>
-        <button class="link">Logout</button>
-      </li>
-    </ul>
-    <div class="text-right m-t-10">
-      <!-- <button class="link">🌚</button> -->
-      <button class="link">☀️</button>
+<body>
+  <div class="header-wrap">
+    <div class="header-top-blk">
+      <div class="header-container">
+        <ul>
+          <li>
+            <a class="logo" href="/">Link Share</a>
+          </li>
+          <li>
+            <a class="login" href="/login">Login</a>
+          </li>
+        </ul>
+        <div class="skin-wrap">
+          Light mode
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          Dark mode
+        </div>
+      </div>
     </div>
-  </nav>
-  <div class="container m-t-20">
-    <h2>Login</h2>
-    <!-- <h1>Signup</h1> -->
-    <form action="">
-      <label for="username">Username</label>
-      <input type="text" id="username" placeholder="akts" />
-
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Your secret password please" />
-
-      <input type="submit" value="Login"/>
-      <!-- <input type="submit" value="Signup"/> -->
-    </form>
-
+    <div class="bg-pattern"></div>
+  </div>
+  <div class="bg-curved-radius">
+    <div class="content-container">
+      <!-- Login form -->
+      <div class="form-container " id="login-form">
+        <h2>Login</h2>
+        <form action="" class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="akts" />
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Your secret password please" />
+          <div class="spacer-10"></div>
+          <input type="submit" value="Login"/>
+          <!-- <input type="submit" value="Signup"/> -->
+        </form>
+        <button class="small link" onclick="hideSignup()">Go to Signup</button>
+      </div>
+      <!-- Sign up form -->
+      <div class="form-container d-none" id="signup-form">
+        <h2>Signup</h2>
+        <form action="" class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="akts" />
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Your secret password please" />
+          <div class="spacer-10"></div>
+          <input type="submit" value="Create account"/>
+          <!-- <input type="submit" value="Signup"/> -->
+        </form>
+        <button class="small link" onclick="hideSignup()">Go to Login</button>
+      </div>
+    </div>
   </div>
 </body>
-
+<script>
+function hideSignup() {
+  var x = document.getElementById("login-form");
+  var y = document.getElementById("signup-form");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+}
+</script>
 </html>
